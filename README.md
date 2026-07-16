@@ -36,12 +36,14 @@ The tool is designed to be easy to demonstrate:
 
 TalentLens checks the job description for common job-related skills such as Python, SQL, Excel, Power BI, JavaScript, communication, and project management. It also recognises common education terms and a stated number of years of experience.
 
+You can also type in your own extra skills (for example, "Zendesk, SEO, negotiation") in the **Add extra skills to look for** box. These are added to the built-in list every time you click **Find job criteria** or **Rank candidates**, so you're never limited to the default skill bank.
+
 ### Candidate management
 
 The user can:
 
 - Add one candidate by entering a name and pasting resume text.
-- Upload a single `.txt` resume file.
+- Upload a single `.txt` **or `.pdf`** resume file — text is pulled out of the PDF automatically so you can review it before adding the candidate.
 - Import many candidates from a CSV file.
 - Remove an individual candidate.
 - Reset all job and candidate data safely.
@@ -67,8 +69,9 @@ After ranking, TalentLens shows:
 - Missing job-related skills
 - A score breakdown for Skills, Experience, and Education
 - Number of candidates, average match score, and the top candidate
-- Candidate-name search in the final results
-- CSV export for opening the ranking in Microsoft Excel
+- A colour-coded chart comparing every shown candidate's Skills, Experience, and Education scores side by side
+- Candidate-name search, plus **minimum match score** and **minimum years of experience** filters, in the final results
+- CSV export for opening the ranking in Microsoft Excel — the export follows whatever filters are currently applied
 
 ### Built-in demonstration material
 
@@ -180,7 +183,8 @@ Hiring decisions affect people’s lives. This project must be used responsibly.
 ## Limitations
 
 - The application uses simple keyword matching; it does not understand the full meaning of a resume.
-- It currently supports pasted text and `.txt` files, not PDF or DOCX parsing.
+- It currently supports pasted text, `.txt` files, and text-based `.pdf` files. Scanned/image-only PDFs will not produce readable text.
+- PDF reading uses the pdf.js library loaded from a CDN, so an internet connection is needed the first time a PDF is uploaded in a session.
 - Education matching is based on words, not verified qualifications.
 - Experience is estimated only when the resume clearly states a number of years.
 - Data is not saved after the browser page is refreshed.

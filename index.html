@@ -23,6 +23,9 @@
         <textarea id="jobDescription" rows="7" placeholder="Example: We need a Data Analyst with Python, SQL, Excel and Power BI. A bachelor's degree and 2 years of experience are preferred."></textarea>
         <button id="analyzeJob" class="primary">Find job criteria</button>
         <div id="criteria" class="criteria hidden"></div>
+        <label for="customSkills">Add extra skills to look for (optional)</label>
+        <input id="customSkills" placeholder="e.g. Zendesk, SEO, negotiation — separate with commas" />
+        <p class="helper">Use this for skills that aren't in our built-in list. They'll be added every time you find job criteria.</p>
         <div class="weights-panel">
           <h3>Choose score weights</h3>
           <p>Set how important each job-related factor should be. The three values should total 100.</p>
@@ -39,7 +42,7 @@
         <div class="section-heading"><span class="step">02</span><div><h2>Add candidates</h2><p>Use resume text only. Names and contact details are not used in the score.</p></div></div>
         <div class="candidate-fields">
           <div><label for="candidateName">Candidate name</label><input id="candidateName" placeholder="e.g. Ananya Sharma" /></div>
-          <div><label for="resumeFile">Or upload a .txt resume</label><input id="resumeFile" type="file" accept=".txt,text/plain" /></div>
+          <div><label for="resumeFile">Or upload a .txt or .pdf resume</label><input id="resumeFile" type="file" accept=".txt,.pdf,text/plain,application/pdf" /><p id="resumeFileStatus" class="helper"></p></div>
           <div><label for="csvFile">Or import a candidate CSV</label><input id="csvFile" type="file" accept=".csv,text/csv" /></div>
         </div>
         <label for="resumeText">Resume text</label>
@@ -58,12 +61,18 @@
         <button id="exportCsv" class="outline" disabled>Export results as CSV</button>
         <label class="filter-label" for="resultFilter">Find a candidate in the results</label>
         <input id="resultFilter" type="search" placeholder="Type a candidate name" />
+        <div class="filter-row">
+          <label>Minimum match score <input id="minScoreFilter" class="weight-input" type="number" min="0" max="100" value="0" />%</label>
+          <label>Minimum years of experience <input id="minExperienceFilter" class="weight-input" type="number" min="0" value="0" /></label>
+        </div>
         <div id="summary" class="summary hidden"></div>
+        <div id="chart" class="chart hidden"></div>
         <div id="results" class="results empty-state">Add a role and one or more candidates to see the comparison.</div>
       </section>
     </main>
 
     <footer>This demo uses simple keyword matching in your browser. No resume data is uploaded or stored.</footer>
+    <script src="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
