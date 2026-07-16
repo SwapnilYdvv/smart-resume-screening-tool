@@ -1,0 +1,8 @@
+Data Analyst
+
+We are looking for a Data Analyst to turn business data into useful insights. The candidate should be comfortable using Python, SQL, Excel, Power BI, data analysis, data visualization, and communication skills. A bachelor's degree and at least 2 years of relevant experience are preferred.
+
+Key responsibilities:
+- Clean and analyse business data.
+- Create dashboards and reports for stakeholders.
+- Communicate findings clearly to non-technical teams.
