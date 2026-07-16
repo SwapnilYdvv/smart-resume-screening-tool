@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TalentLens | Resume Screening</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="eyebrow">RESPONSIBLE HIRING ASSISTANT</p>
+      <h1>Talent<span>Lens</span></h1>
+      <p class="subtitle">Compare candidates against a job description with clear, human-reviewable criteria.</p>
+    </header>
+
+    <main>
+      <section class="card job-card">
+        <div class="section-heading"><span class="step">01</span><div><h2>Describe the role</h2><p>Paste the job description. We identify important job-related skills and experience.</p></div></div>
+        <label for="jobDescription">Job description</label>
+        <textarea id="jobDescription" rows="7" placeholder="Example: We need a Data Analyst with Python, SQL, Excel and Power BI. A bachelor's degree and 2 years of experience are preferred."></textarea>
+        <button id="analyzeJob" class="primary">Find job criteria</button>
+        <div id="criteria" class="criteria hidden"></div>
+      </section>
+
+      <section class="card candidate-card">
+        <div class="section-heading"><span class="step">02</span><div><h2>Add candidates</h2><p>Use resume text only. Names and contact details are not used in the score.</p></div></div>
+        <div class="candidate-fields">
+          <div><label for="candidateName">Candidate name</label><input id="candidateName" placeholder="e.g. Ananya Sharma" /></div>
+          <div><label for="resumeFile">Or upload a .txt resume</label><input id="resumeFile" type="file" accept=".txt,text/plain" /></div>
+        </div>
+        <label for="resumeText">Resume text</label>
+        <textarea id="resumeText" rows="8" placeholder="Paste a resume here. Include skills, education, projects and experience."></textarea>
+        <button id="addCandidate" class="secondary">Add candidate</button>
+        <p class="helper">Tip: add at least two candidates, then rank them below.</p>
+        <div id="candidateList" class="candidate-list"></div>
+      </section>
+
+      <section class="card results-card">
+        <div class="section-heading"><span class="step">03</span><div><h2>Review the ranking</h2><p>Scores are an aid—not a hiring decision. Always review candidates yourself.</p></div></div>
+        <button id="rankCandidates" class="primary">Rank candidates</button>
+        <div id="results" class="results empty-state">Add a role and one or more candidates to see the comparison.</div>
+      </section>
+    </main>
+
+    <footer>This demo uses simple keyword matching in your browser. No resume data is uploaded or stored.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
