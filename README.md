@@ -12,6 +12,9 @@ TalentLens is a beginner-friendly front-end project that compares resume text wi
 - Includes one-click sample data for a polished project demonstration
 - Exports ranked results as a CSV file, which opens in Excel
 - Includes a synthetic dataset with one job description and ten fictional candidate resumes
+- Imports multiple candidates from a CSV file
+- Shows a results dashboard with candidate count, average match score, and top match
+- Lets the recruiter search within the final candidate ranking
 - Runs entirely in the browser: no database, login, or resume upload is required
 
 ## How to run it

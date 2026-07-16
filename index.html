@@ -40,12 +40,14 @@
         <div class="candidate-fields">
           <div><label for="candidateName">Candidate name</label><input id="candidateName" placeholder="e.g. Ananya Sharma" /></div>
           <div><label for="resumeFile">Or upload a .txt resume</label><input id="resumeFile" type="file" accept=".txt,text/plain" /></div>
+          <div><label for="csvFile">Or import a candidate CSV</label><input id="csvFile" type="file" accept=".csv,text/csv" /></div>
         </div>
         <label for="resumeText">Resume text</label>
         <textarea id="resumeText" rows="8" placeholder="Paste a resume here. Include skills, education, projects and experience."></textarea>
         <button id="addCandidate" class="secondary">Add candidate</button>
         <button id="loadSample" class="outline">Load sample data</button>
         <a class="download-link" href="data/sample_candidates.csv" download>Download sample dataset</a>
+        <button id="resetData" class="text-button">Reset all data</button>
         <p class="helper">Tip: add at least two candidates, then rank them below.</p>
         <div id="candidateList" class="candidate-list"></div>
       </section>
@@ -54,6 +56,9 @@
         <div class="section-heading"><span class="step">03</span><div><h2>Review the ranking</h2><p>Scores are an aid—not a hiring decision. Always review candidates yourself.</p></div></div>
         <button id="rankCandidates" class="primary">Rank candidates</button>
         <button id="exportCsv" class="outline" disabled>Export results as CSV</button>
+        <label class="filter-label" for="resultFilter">Find a candidate in the results</label>
+        <input id="resultFilter" type="search" placeholder="Type a candidate name" />
+        <div id="summary" class="summary hidden"></div>
         <div id="results" class="results empty-state">Add a role and one or more candidates to see the comparison.</div>
       </section>
     </main>
