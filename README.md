@@ -7,7 +7,10 @@ TalentLens is a beginner-friendly front-end project that compares resume text wi
 - Extracts common skills from a job description
 - Lets a recruiter paste or upload `.txt` resume content
 - Ranks candidates by job-related skill match, education keywords, and stated experience
-- Shows the skills that led to each score
+- Lets the user set the score weight for skills, experience, and education
+- Shows both matched and missing skills for each candidate
+- Includes one-click sample data for a polished project demonstration
+- Exports ranked results as a CSV file, which opens in Excel
 - Runs entirely in the browser: no database, login, or resume upload is required
 
 ## How to run it
@@ -29,6 +32,4 @@ This project is an educational demo. It uses simple keyword matching and should 
 ## Future improvements
 
 - Support PDF and DOCX file parsing
-- Allow custom score weights
-- Export rankings to CSV
 - Add user accounts and secure data storage

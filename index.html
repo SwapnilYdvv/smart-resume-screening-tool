@@ -23,6 +23,16 @@
         <textarea id="jobDescription" rows="7" placeholder="Example: We need a Data Analyst with Python, SQL, Excel and Power BI. A bachelor's degree and 2 years of experience are preferred."></textarea>
         <button id="analyzeJob" class="primary">Find job criteria</button>
         <div id="criteria" class="criteria hidden"></div>
+        <div class="weights-panel">
+          <h3>Choose score weights</h3>
+          <p>Set how important each job-related factor should be. The three values should total 100.</p>
+          <div class="weight-grid">
+            <label>Skills <input id="skillsWeight" class="weight-input" type="number" min="0" max="100" value="70" />%</label>
+            <label>Experience <input id="experienceWeight" class="weight-input" type="number" min="0" max="100" value="15" />%</label>
+            <label>Education <input id="educationWeight" class="weight-input" type="number" min="0" max="100" value="15" />%</label>
+          </div>
+          <p id="weightMessage" class="weight-message">Total: 100% ✓</p>
+        </div>
       </section>
 
       <section class="card candidate-card">
@@ -34,6 +44,7 @@
         <label for="resumeText">Resume text</label>
         <textarea id="resumeText" rows="8" placeholder="Paste a resume here. Include skills, education, projects and experience."></textarea>
         <button id="addCandidate" class="secondary">Add candidate</button>
+        <button id="loadSample" class="outline">Load sample data</button>
         <p class="helper">Tip: add at least two candidates, then rank them below.</p>
         <div id="candidateList" class="candidate-list"></div>
       </section>
@@ -41,6 +52,7 @@
       <section class="card results-card">
         <div class="section-heading"><span class="step">03</span><div><h2>Review the ranking</h2><p>Scores are an aid—not a hiring decision. Always review candidates yourself.</p></div></div>
         <button id="rankCandidates" class="primary">Rank candidates</button>
+        <button id="exportCsv" class="outline" disabled>Export results as CSV</button>
         <div id="results" class="results empty-state">Add a role and one or more candidates to see the comparison.</div>
       </section>
     </main>
