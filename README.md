@@ -170,6 +170,12 @@ No external framework, database, or API key is required.
 1. Open the project folder in Visual Studio Code.
 2. Open `index.html`.
 3. You may use the **Live Server** extension if you prefer an auto-refreshing browser preview, but it is optional.
+   
+### With VS Code Using The python App   
+1. Open the project folder in Visual Studio Code
+2. then in the terminal Use These
+3. pip install -r requirements.txt
+   streamlit run app.py
 
 ## Responsible-use statement
 
