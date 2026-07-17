@@ -188,6 +188,7 @@ Hiring decisions affect people’s lives. This project must be used responsibly.
 - Do not upload private or sensitive real resumes to a public version of this project.
 ## Results 
 <img width="1613" height="841" alt="Image" src="https://github.com/user-attachments/assets/f8e6e054-a2bd-47e5-84f2-b0d8d730ac6e" />
+<img width="1166" height="867" alt="Image" src="https://github.com/user-attachments/assets/9086a634-498b-4690-af75-ed9b88f58c5e" />
 
 ## Limitations
 
