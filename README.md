@@ -16,6 +16,7 @@ TalentLens is a beginner-friendly web application that helps a recruiter compare
 - [Technology used](#technology-used)
 - [Run the project](#run-the-project)
 - [Responsible-use statement](#responsible-use-statement)
+- [Results](#Results)
 - [Limitations](#limitations)
 - [Future improvements](#future-improvements)
 
@@ -179,6 +180,8 @@ Hiring decisions affect people’s lives. This project must be used responsibly.
 - Consider transferable skills and real project work, not only exact keywords.
 - Check the quality and accuracy of resume information yourself.
 - Do not upload private or sensitive real resumes to a public version of this project.
+## Results 
+<img width="1613" height="841" alt="Image" src="https://github.com/user-attachments/assets/f8e6e054-a2bd-47e5-84f2-b0d8d730ac6e" />
 
 ## Limitations
 
